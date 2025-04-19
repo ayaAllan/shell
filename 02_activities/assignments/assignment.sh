@@ -38,8 +38,8 @@ mkdir -p processed/server_logs processed/user_logs processed/event_logs
 mv raw/server_*.log processed/server_logs
 
 # 6. Repeat the above step for user logs and event logs
-mv raw/user_*.log processed/user_logs
-mv raw/event_*.log processed/event_logs
+cp raw/user_*.log processed/user_logs
+cp raw/event_*.log processed/event_logs
 
 # 7. For user privacy, remove all files containing IP addresses (files with "ipaddr" in the filename) from ./data/raw and ./data/processed/user_logs
 rm raw/*ipaddr* processed/user_logs/*ipaddr*
