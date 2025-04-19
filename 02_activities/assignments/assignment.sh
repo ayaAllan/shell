@@ -35,7 +35,7 @@ cd data
 mkdir -p processed/server_logs processed/user_logs processed/event_logs
 
 # 5. Copy all server log files (files with "server" in the name AND a .log extension) from ./data/raw to ./data/processed/server_logs
-mv raw/server_*.log processed/server_logs
+cp raw/server_*.log processed/server_logs
 
 # 6. Repeat the above step for user logs and event logs
 cp raw/user_*.log processed/user_logs
